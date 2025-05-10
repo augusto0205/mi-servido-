@@ -26,7 +26,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Configuración del motor de vistas
 app.set('view engine', 'ejs');
-app.set("views", path.join(__dirname, "./src/views"));
+app.set("views", path.join(__dirname, "../views"));
 
 // Configuración de rutas
 app.use("/", inicioRouter);
