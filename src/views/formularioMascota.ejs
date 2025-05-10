@@ -9,7 +9,7 @@
 <body>
     <main>
         <h1>Agenda tu cita</h1>
-       <form action="formulario" method="get"> 
+       <form action="/pg2_25074591/contact/add" method="post" id="formulario"> 
             <tr>
                 <td>
                     <label for="Nombre">Nombre del dueno</label>
@@ -17,42 +17,25 @@
                 </td>
             </tr>
 
-            <tr>
-                <td>
-                    <label for="Nombre Mascota"> Nombre de la mascota</label>
-                    <input type="text" name="Nombre Mascota" placeholder="Lola" id="Nombre Mascota">
-                </td>
-            </tr>
+           
 
             <tr>
                 <td>
-                    <label for="Telefono">Telefono</label>
-                    <input type="text" name="Telefono" placeholder="123456789" id="Telefono">
+                    <label for="Correo">Email</label>
+                    <input type="email" name="Email" placeholder="alguiem@gmail.com" id="correo">
                 </td>
             </tr>
 
-            <tr>
-                <td>
-                    <label for="Animal">Animal</label>
-                    <select name="Animal" id="Animal">
-                        <option id="Animal">Perro</option>
-                        <option id="Animal">Gato</option>
-                        <option id="Animal">Pez</option>
-                        <option id="Animal">Hanster </option>
-                        <option id="Animal">Mono</option>
-                        <option id="Animal">Ave</option>
-                        <option value="Animal">Morrocoy</option>
-                    </select>
-                </td>
-            </tr>
+          
 
 
             <tr>
                 <td>
-                    <label for="Fecha">Fecha de la cita</label>
-                    <input type="date" name="Fecha" id="Fecha">
+                    <label for="Comentario"></label>
+                    <textarea name="Comentario" id="Comentario" cols="30" rows="10" placeholder="Escribe un comentario"></textarea>
                 </td>
             </tr>
+
 
 
             <tr>
@@ -60,6 +43,8 @@
                     <input type="submit">
                 </td>
             </tr>
+
+            
 
             <tr>
                 <td>

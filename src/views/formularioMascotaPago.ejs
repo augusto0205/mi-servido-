@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularioPago</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+     <main>
+        <form action="/pg2_25074591/payment/add" method="post" >
+           <h1>Formulario de pago</h1>
+           <tr>
+                <td>
+                    <label for="Correo">Email</label>
+                    <input type="email" name="Email" placeholder="alguien@.com" id="correo">
+                </td>
+           </tr>
+
+              <tr>
+                 <td>
+                      <label for="Nombre">Nombre del titular</label>
+                      <input type="text" name="Nombre" placeholder="Omar Martinez" id="Nombre">
+                 </td>
+              </tr>
+
+
+              <tr>
+                    <td>
+                        <label for="NumeroTarjeta ">Numero tarjeta</label>
+                        <input type="number" name="NumeroTarjeta" placeholder="1234 5678 9012 3456" id="NumeroTarjeta">
+                    </td>
+              </tr>
+
+
+              <tr>
+                    <td>
+                        
+                        <label for="FechaVencimientoMM">MM</label>
+                        <input type="text" name="FechaVencimiento" placeholder="MM" id="FechaVencimiento">
+                    </td>
+
+                    <td>
+                        <label for="FechaVencimientoYY">YY</label>
+                        <input type="text" name="FechaVencimiento" placeholder="YY" id="FechaVencimiento">
+                    </td>
+              </tr>
+
+              <tr>
+                   <td>
+                        <label for="CVV">CVV</label>
+                        <input type="number" name="CVV" placeholder="123" id="CVV">
+                   </td>
+              </tr>
+              
+                <tr>
+                   <td>
+                     <label for="Monto">Monto</label>
+                     <input type="number" name="Monto" placeholder="1000" id="Monto">
+                   </td>
+                </tr>      
+
+                <tr>
+                     <td>
+                            <label for="TipoMoneda">Tipo de pago</label>
+                            <select name="TipoPago" id="TipoPago">
+                                <option id="TipoPago">Dolars</option>
+                                <option id="TipoPago">Euros</option>
+                                <option id="TipoPago">USD</option>
+                                <option id="TipoPago">USDT</option>
+                                <option id="TipoPago">B.S</option>
+                            </select>
+                     </td>
+        </form>
+     </main>
+    
+</body>
+</html>
