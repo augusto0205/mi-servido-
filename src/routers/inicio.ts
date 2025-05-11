@@ -1,16 +1,30 @@
 import { Router } from "express";
 import homeGet from "../controllers/home";
-import formulariMascota from "../controllers/formularioMascota";
-import formularioMascotaPago from "../controllers/formularioMascotaPago";
+import { 
+    formularioMascota,
+    formularioMascotaPost 
+  } from "../controllers/formularioMascota";
+
+import { 
+    formularioMascotaPago, 
+    formularioMascotaPagoPost 
+  } from "../controllers/formularioMascotaPago";
 
 
 const router: Router = Router();
 
 router.get("/", homeGet);
 
-router.get("/formulario-mascota", formulariMascota);
+router.get("/formularioMascota", formularioMascota);
 
-router.get("/formulario-mascotaPago", formularioMascotaPago);
+router.post("/formularioMascota", formularioMascotaPost);
+
+router.get("/formularioMascotaPago", formularioMascotaPago);
+
+router.post("/formularioMascotaPago", formularioMascotaPagoPost);
+
+
+
 
 export default router;
 
